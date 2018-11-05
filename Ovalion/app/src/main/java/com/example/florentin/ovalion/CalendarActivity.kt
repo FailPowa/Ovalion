@@ -1,6 +1,5 @@
 package com.example.florentin.ovalion
 
-import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.view.GravityCompat
@@ -12,7 +11,6 @@ import com.events.calendar.views.EventsCalendar
 import kotlinx.android.synthetic.main.activity_calendar.*
 import java.util.*
 import kotlin.collections.ArrayList
-
 
 class CalendarActivity : AppCompatActivity(), EventsCalendar.Callback {
 
@@ -43,7 +41,7 @@ class CalendarActivity : AppCompatActivity(), EventsCalendar.Callback {
         eventsDate.add(c)
 
         // Configure action bar
-        setSupportActionBar(toolbar)
+       /* setSupportActionBar(toolbar)
         val actionBar = supportActionBar
         actionBar?.title = "Hello Toolbar"
 
@@ -71,7 +69,7 @@ class CalendarActivity : AppCompatActivity(), EventsCalendar.Callback {
         drawerToggle.isDrawerIndicatorEnabled = true
         drawer_layout.addDrawerListener(drawerToggle)
         drawerToggle.syncState()
-        var navView = navigation_view.
+        var navView = R.id.navigation_view
         // Set navigation view navigation item selected listener
         navView.setNavigationItemSelectedListener{
             when (it.itemId){
@@ -83,7 +81,7 @@ class CalendarActivity : AppCompatActivity(), EventsCalendar.Callback {
             // Close the drawer
             drawer_layout.closeDrawer(GravityCompat.START)
             true
-        }
+        } */
     }
 
     override fun onDayLongPressed(selectedDate: Calendar?) {
